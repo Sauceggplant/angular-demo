@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular-Demo</title>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Default Page Layout-->
+    <!-- 页面顶部 -->
+    <div ui-view="top"></div>
+    <div class="row" ui-view>
+        <!-- 页面左侧 -->
+        <div class="col-sm-2 bg-success" ui-view="left"></div>
+        <!-- 页面中间 -->
+        <div class="col-sm-8 bg-danger" ui-view="center"></div>
+        <!-- 页面右侧 -->
+        <div class="col-sm-2 bg-warning" ui-view="right"></div>
+    </div>
+    <!-- 页面底部 -->
+    <div class="bg-success" ui-view="bottom"></div>
+</body>
+</html>
