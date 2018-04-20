@@ -41,7 +41,7 @@
   "scripts": {
     "build": "set NODE_ENV=build&&webpack -p --progress --colors ",
     "dev": "set NODE_ENV=dev&& webpack-dev-server --hot --progress --colors --host 127.0.0.1 --port 8080",
-    "test": "cd dist&&nw ."
+    "test": "cd dist&&/Users/jacob/Applications/NodeWebkit/nwjs-sdk-v0.29.2-osx-x64/nwjs.app/Contents/MacOS/nwjs ."
   },
   "repository": {
     "type": "git",
